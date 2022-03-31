@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="../css/usuario.css">
+
+<table border="1" >
+    <tr>
+        <td>CPF</td>
+        <td>email</td>  
+        <td>senha</td>
+        <td>excluir</td>  
+        <td>editar</td>    
+    </tr>    
+{{#each usuarios}}
+     <tr>
+        <td>{{cpf}}</td>
+        <td>{{email}}</td> 
+        <td>{{senha}}</td>
+        <td><a href="/excluir/{{cpf}}"> <button> excluir</button></a> </td>   
+        <td><a href="/update/{{cpf}}"> <button> EDITAR</button></a></td>    
+    </tr>
+{{/each}}   
+</table>
